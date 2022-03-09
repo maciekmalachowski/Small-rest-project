@@ -42,7 +42,7 @@ You can return many persons. To do it, you need to add second number after `/`.
 ```
 It outputs details of 5 people from id 1 to 5 in this case.
 
-## Media
+## App appearance
 
 Below you can see how it looks:
 
