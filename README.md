@@ -1,3 +1,4 @@
+[![Run tests](https://github.com/MaciekEO/mmpackage/actions/workflows/tests.yml/badge.svg)](https://github.com/MaciekEO/mmpackage/actions/workflows/tests.yml)
 # Small_rest_project
 
 -----------
