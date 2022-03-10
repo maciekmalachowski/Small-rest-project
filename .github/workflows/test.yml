@@ -30,7 +30,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Django app url shortner test
-      run: python djangoserver/manage.py test urlshortner
+      run: python backend/server/manage.py test urlshortner
       env:
         DB_HOST: 127.0.0.1
         DB_PASSWORD: postgres
