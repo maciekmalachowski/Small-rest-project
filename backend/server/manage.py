@@ -20,3 +20,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    set DJANGO_SETTINGS_MODULE=server.settings
