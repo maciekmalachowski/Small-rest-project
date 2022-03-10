@@ -9,21 +9,22 @@ on:
     branches:
       - main
 
-# on:
-#   schedule:
-#     - cron:  '*/15 * * * *'
-
 jobs:
-  build:
-
+  test:
     runs-on: ubuntu-latest
 
+  strategy:
+    matrix:
+      python-version: [3.8, 3.9]
+
+
     steps:
+    - name: Checkout repo
     - uses: actions/checkout@v2
-    - name: Set up Python 3.7
+    - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v2
       with:
-        python-version: 3.7
+        python-version: ${{ matrix.python-version }}
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
@@ -36,3 +37,10 @@ jobs:
     - name: Django Testing
       run: |
         python3 backend/server/manage.py test
+        - name: Install pytest
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest
+      # Run the tests. I'm using pytest and the file is in the tests directory.
+    - name: Run tests
+      run: pytest backend/server/endpoints/tests.py
