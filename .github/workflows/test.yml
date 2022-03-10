@@ -26,11 +26,11 @@ jobs:
     - name: Coverage report
       run: |
         pip install coverage
-        coverage run backend/server/tests.py
+        coverage run backend/server/endpoints/tests.py
         coverage report
     - name: Django Testing
       run: |
-        python3 backend/server/test.py
+        python3 backend/server/endpoints/test.py
     # - name: Install pytest
     #   run: |
     #     python -m pip install --upgrade pip
