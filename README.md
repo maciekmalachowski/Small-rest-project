@@ -1,5 +1,5 @@
 [![Run tests](https://github.com/MaciekEO/mmpackage/actions/workflows/tests.yml/badge.svg)](https://github.com/MaciekEO/mmpackage/actions/workflows/tests.yml)
-# Small_rest_project💻
+# Small-rest-project💻
 
 -----------
 This is rest project which uses `Django Rest Framework` with a connected Database.
