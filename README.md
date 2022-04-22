@@ -13,17 +13,17 @@ Below is a link to the database I used.
 Db: https://raw.githubusercontent.com/pplonski/datasets-for-start/master/adult/data.csv
 
 ## Setup
-To use it you have to go to the `Small_rest_project` directory in the console:
+To use it you have to go to the `Small-rest-project` directory in the console:
 ```
-C:\Users\user> cd Small_rest_projekt
+cd Small-rest-projekt
 ```
 Then go to the `backend/server` directory:
 ```
-C:\Users\user\Small_rest_project> cd backend\server
+cd backend/server
 ```
 Now all that's left, is to **run the program** in console.
 ```
-py manage.py runserver
+python manage.py runserver
 ```
 
 ## Endpoints
